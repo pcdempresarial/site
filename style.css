@@ -1,0 +1,662 @@
+/*Importando a fonte que sera usada em todo HTML*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/*Reset da página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+    color: #1c2a38;
+}
+
+
+/*Estilização da Barra de navegação (menu)*/
+header {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+    /*  position: fixed; */
+    width: 100%;
+}
+
+nav {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background: #41B0E0;
+}
+
+nav .logo img {
+    width: 4rem;
+    float: left;
+}
+
+nav h1 {
+    margin-left: -230px;
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list .item {
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+
+.nav-list a:hover {
+    /* background-color: #49C8F5;
+    padding: 10px;
+    border-radius: 2rem;
+    transition: all 0.5s;
+    color: #fff; */
+    /* padding: 10px; */
+    border-bottom: 3px solid #f5f5f5;
+    /* border-top: 2px solid #49C8F5; */
+
+}
+
+
+
+/*Estilização dos Botões no Site*/
+.botao-fonte {
+    padding: 5px;
+    border-radius: 20%;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #49C8F5;
+    float: right;
+    color: #fff;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    
+}
+
+.botao-fonte:hover {
+    background-color: #49C8F5;
+    color: black;
+
+
+}
+
+/*Estilização da área do conteúdo principal da 1ª página*/
+.container {
+    display: flex;
+    height: 92vh;
+}
+
+main {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+}
+
+.esquerda {
+    /* display: block; */
+    width: 500px;
+    margin: 100px;
+    margin-top: 100px;
+}
+
+main .container .esquerda h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.esquerda p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+.direita img {
+    float: right;
+    padding-top: 40px;
+    width: 600px;
+}
+
+
+/*Alterando os cards da página principal*/
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+    background-color: #7749FC;
+    
+}
+
+.container-card .card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
+    border-radius: 10%;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    background-color: white;
+}
+
+.card img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(14, 121, 192, 0.2);
+    border-radius: 50%;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/*Estilização da área que contém a frase de impacto*/
+.frase {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .1);
+    height: 80vh;
+}
+
+.frase .frase-impacto {
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.frase .frase-impacto h2 {
+    width: 500px;
+    margin-left: 50px;
+    float: right;
+    padding-top: 100px;
+
+}
+
+.frase .frase-impacto p {
+    float: right;
+}
+
+
+.frase .frase-impacto img {
+    width: 500px;
+    border-radius: 50%;
+    float: left;
+}
+
+.empresas {
+    height: 80vh;
+}
+
+/*Estilização da área dos logos de Empreas que praticam a Inclusao*/
+.empresas {
+    height: 25rem;
+}
+
+.empresas .empresas-inclusao h2 {
+    padding: 4rem;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: Montserrat, sans-serif;
+}
+
+.empresas-inclusao ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.empresas-inclusao li:hover {
+    transform: scale(1.2);
+}
+
+.empresas-inclusao .logo img {
+    width: 10rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/*Estilização da Página Acessibilidade*/
+.acessibilidade {
+    text-align: center;
+    padding-top: 10vh;
+    /*Para todos os títulos de cada página, colocar um padding*/
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #49C8F5;
+}
+
+.acessibilidade {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.acessibilidade h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
+.texto-acessibilidade {
+    display: flex;
+    margin: 50px 100px;
+}
+
+.texto-acessibilidade img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.texto-acessibilidade p {
+    display: block;
+    width: 700px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.dica {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+    background-color: #7749FC;
+}
+
+.dica h2 {
+    text-transform: uppercase;
+    padding: 20px;
+    /* border: 2px solid #49C8F5; */
+    color: #fff;
+}
+
+.titulo {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual p {
+
+    width: 300px;
+}
+
+.visual img {
+    width: 400px;
+}
+
+.visual ul {
+    width: 600px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.visual ul li {
+    margin-top: 20px;
+}
+
+.superficie .texto {
+    width: 100%;
+    padding: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.superficie .tabela {
+    width: 100%;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.fotosContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.fotosContainer img{
+    max-width: 1000px;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #7749FC;
+}
+
+.textoFoto{
+    padding-top: 40px;
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+/* Estilização do Informações */
+
+.info{
+    margin: 50px;
+}
+
+.infoUL ul{
+    margin-left: 40px;
+}
+
+.infoTitle h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.inf {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
+.dicaInf h3 {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+    background-color: #7749FC;
+}
+
+.dicaInfo {
+    text-transform: uppercase;
+    padding: 20px;
+    /* border: 2px solid #49C8F5; */
+    color: #fff;
+}
+
+
+
+/*Estilização do Quem somos*/
+
+/* .esquerda h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #fff;
+} */
+
+.container .direita-somos img {
+    width: 350px;
+    border-radius: 100px;
+    opacity: 0.9;
+    margin: 50px;
+}
+
+.quemSomos {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.esquerda .quemSomos {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+
+/*Estilização Deficiência*/
+
+.deficiencia {
+    margin: 50px;
+}
+
+.deficiencia ul{
+    margin: 40px;
+}
+
+.listaDet{
+    margin: 40px;
+}
+
+.esquerdaDef h1 {
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.defic {
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid #49C8F5;
+}
+.esquerdaDef{
+    margin: 50px;
+}
+
+
+/*Estilização do Contato*/
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+.contactContainer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+}
+
+.contactContainer div img{
+    
+    max-width: 483px;
+    max-height: 483px;
+}
+
+#contact-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 3px solid;
+    
+}
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #49C8F5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+button[type="reset"]:hover {
+    background-color: #7749FC;
+    color: #fff;
+}
+
+button[type="reset"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #7749FC;
+    color: #fff;
+}
+
+.emailCont{
+    color: #fff;
+    font-size:medium
+}
+/* Estilos específicos para dispositivos móveis */
+@media only screen and (max-width: 500px) {
+    form {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+    }
+}
+
+.info {
+    padding: 50px;
+}
+
+.informacoes {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.simbolo, .laudo {
+    font-size: 30px;
+}
+
+.logo-info {
+    height: 150px;
+}
+
+.simbolo {
+    text-align: center;
+    margin: 50px;
+}
+
+.simbolo-container {
+    display: flex;
+}
+
+.simbolo-esquerda {
+    float: left;
+    width: 800px;
+    margin-right: 50px;
+}
+
+.logo-direita {
+    float: right;
+    height: 250px;
+    margin-top: 50%;
+}
+
+.logo-direita:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+/*Estilização do Footer (rodapé)*/
+footer {
+    font-size: 15px;
+    display: block;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: .5;
+    color: #fff; */
+    background: #3289a3;
+    color: white;
+    width: 100%;
+    min-height: 100px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}
+
+.background-svg {
+    margin-bottom: -10px;
+    color: #3289a3;
+    background: white;
+}
+
+#curved-border {
+    fill: #3289a3;
+}
+
+.deficiencia {
+    margin: 70px;
+}
+
+.deficiencia h2 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.deficiencia h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
